@@ -7,21 +7,29 @@
     <title>個人履歷</title>
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/index.js" defer></script>
   </head>
   <body>
+    <!-- 錨點 -->
+    <a name="header" style="position: relative; top: 0px"></a>
     <header class="header">
-      <nav class="logo"><img src="" alt="" /></nav>
+      <nav class="logo"><a href="#header">LQT.com</a></nav>
       <ul>
-        <li><a href="">About</a></li>
-        <li><a href="">Experience</a></li>
-        <li><a href="">Proforlio</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="#about">關於我</a></li>
+        <li><a href="#experience">個人經驗</a></li>
+        <li><a href="#portfolio">作品集</a></li>
+        <li><a href="#contact">聯絡我</a></li>
       </ul>
     </header>
     <section id="Banner">
-      <p>Making at the sweet spot between design and sustainability speed.</p>
+      <p>
+        Making at the sweet spot between <strong>design</strong> and
+        <strong>sustainability speed</strong>.
+      </p>
     </section>
     <section id="About">
+      <!-- 錨點 -->
+      <a name="about" style="position: relative; top: -75px"></a>
       <div class="container">
         <div class="main-pic"></div>
         <div class="description">
@@ -30,12 +38,13 @@
             <p></p>
           </div>
           <div class="education">
-            <h3>輔仁大學經濟系</h3>
-            <p></p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
-            architecto doloribus facere mollitia unde temporibus, delectus nisi
-            voluptas quas placeat, porro obcaecati ipsam illum ea cupiditate
-            sequi odio? Labore, minima.
+            <h3>畢業於輔仁大學經濟系</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+              architecto doloribus facere mollitia unde temporibus, delectus
+              nisi voluptas quas placeat, porro obcaecati ipsam illum ea
+              cupiditate sequi odio? Labore, minima.
+            </p>
           </div>
           <div class="skills">
             <h3>
@@ -71,9 +80,15 @@
         </div>
       </div>
     </section>
-    <section id="Experience"></section>
-    <section id="Portfolio"></section>
-    <section id="Contact"></section>
+    <section id="Experience">
+      <a name="experience" style="position: relative; top: -75px"></a>
+    </section>
+    <section id="Portfolio">
+      <a name="portfolio" style="position: relative; top: -75px"></a>
+    </section>
+    <section id="Contact">
+      <a name="contact" style="position: relative; top: -75px"></a>
+    </section>
     <footer>
       <p>2023 - 3030 &copy; LQT.com</p>
     </footer>

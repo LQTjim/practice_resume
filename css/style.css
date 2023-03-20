@@ -1,27 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+/* font-family: 'Shadows Into Light', cursive; */
+:root {
+  --font-shadow: "Shadows Into Light", cursive;
+  --font-verdana: Verdana, Geneva, Tahoma, sans-serif;
+  --font-color: whitesmoke;
+  --main-bg-color: #22577a;
+  --second-bg-color: #38a3a5;
+  --third-bg-color: #57cc99;
+  --forth-bg-color: #80ed99;
+  --fifth-bg-color: #c7f9cc;
+}
+html {
+  scroll-behavior: smooth;
+}
+/*header*/
+/*#region*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--main-bg-color);
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+.logo > a {
+  display: block;
+  font-family: var(--font-shadow);
+  color: var(--font-color);
+  padding-left: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.header > ul {
+  display: flex;
+}
+.header > ul li > a {
+  display: block;
+  color: whitesmoke;
+  width: 100px;
+  line-height: 60px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.header > ul li > a:hover {
+  background: #4ea3dc;
+  font-weight: bold;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+/*#endregion*/
+
 .container {
   width: 80%;
+  height: 100%;
   max-width: 1200px;
   display: flex;
   justify-content: space-between;
   margin: auto;
 }
 section {
+  width: 100%;
+  height: 100vh;
   padding: 50px;
 }
+
+/*section#Banner*/
+/*#region*/
 #Banner {
-  width: 100%;
-  height: 100px;
-  background: #000;
+  background: var(--second-bg-color);
+  display: flex;
+  align-items: center;
+}
+#Banner > p {
+  font-size: 3rem;
+  font-family: var(--font-verdana);
+  letter-spacing: 5px;
+  width: 50%;
 }
 
+#Banner > p > strong {
+  font-weight: bold;
+}
+#Banner > p > strong:nth-child(1) {
+  background: -webkit-linear-gradient(
+    102.2deg,
+    rgb(250, 45, 66) 9.6%,
+    rgb(245, 104, 104) 96.1%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#Banner > p > strong:nth-child(2) {
+  background: -webkit-linear-gradient(
+    102deg,
+    rgb(5, 117, 230),
+    rgb(2, 27, 121)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/*#endregion*/
+
+/*section#About*/
+/*#region*/
+#About {
+  background: var(--third-bg-color);
+}
 .main-pic,
 .description {
   width: 48%;
 }
 .main-pic {
-  background: purple;
+  background: transparent;
+  background-image: url(/imgs/people1.jpg);
+  background-position: center center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
-.profile {
+.profile > h3 {
+  font-size: 24px;
+}
+.profile > p {
+  font-size: 20px;
 }
 .education {
 }
@@ -45,3 +148,41 @@ section {
   width: 90%;
   background: red;
 }
+/*#endregion*/
+
+/*section#Experience*/
+/*#region*/
+#Experience {
+  background: var(--forth-bg-color);
+}
+/*#endregion*/
+
+/*section#Portfolio*/
+/*#region*/
+#Portfolio {
+  background: var(--fifth-bg-color);
+}
+/*#endregion*/
+
+/*section#Contact*/
+/*#Contact*/
+#Contact {
+  background: var(--second-bg-color);
+}
+/*#endregion*/
+
+/*footer*/
+/*#region*/
+footer {
+  width: 100%;
+  background-color: var(--main-bg-color);
+}
+
+footer > p {
+  font-size: 1.1rem;
+  font-family: var(--font-verdana);
+  color: var(--font-color);
+  text-align: center;
+  line-height: 100px;
+}
+/*#endregion*/
