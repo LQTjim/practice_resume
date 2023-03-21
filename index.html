@@ -7,6 +7,13 @@
     <title>個人履歷</title>
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="/js/index.js" defer></script>
   </head>
   <body>
@@ -26,6 +33,8 @@
         Making at the sweet spot between <strong>design</strong> and
         <strong>sustainability speed</strong>.
       </p>
+      <i class="fa-brands fa-react" style="color: #2abccf"></i>
+      <i class="fa-brands fa-vuejs" style="color: #23d1a6"></i>
     </section>
     <section id="About">
       <!-- 錨點 -->
@@ -47,44 +56,125 @@
             </p>
           </div>
           <div class="skills">
-            <h3>
-              技能列表
-              <ul class="skill-list">
-                <li>
-                  <span class="skill-name">HTML5</span>
-                  <span class="skill-bar">
-                    <span class="skill-level">90%</span>
-                  </span>
-                </li>
-                <li>
-                  <span class="skill-name">CSS3</span>
-                  <span class="skill-bar">
-                    <span class="skill-level">90%</span>
-                  </span>
-                </li>
-                <li>
-                  <span class="skill-name">Javascript</span>
-                  <span class="skill-bar">
-                    <span class="skill-level">90%</span>
-                  </span>
-                </li>
-                <li>
-                  <span class="skill-name">React</span>
-                  <span class="skill-bar">
-                    <span class="skill-level"> 90% </span>
-                  </span>
-                </li>
-              </ul>
-            </h3>
+            <h3>技能列表</h3>
+            <ul class="skill-list">
+              <li>
+                <span class="skill-name">HTML5</span>
+                <span class="skill-bar">
+                  <span class="skill-level-html5">90%</span>
+                </span>
+              </li>
+              <li>
+                <span class="skill-name">CSS3</span>
+                <span class="skill-bar">
+                  <span class="skill-level-css3">80%</span>
+                </span>
+              </li>
+              <li>
+                <span class="skill-name">Javascript</span>
+                <span class="skill-bar">
+                  <span class="skill-level-javascript">80%</span>
+                </span>
+              </li>
+              <li>
+                <span class="skill-name">React</span>
+                <span class="skill-bar">
+                  <span class="skill-level-react"> 70% </span>
+                </span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
     <section id="Experience">
       <a name="experience" style="position: relative; top: -75px"></a>
+      <h3>工作經歷</h3>
+      <div class="container">
+        <ul class="experience-list">
+          <li>
+            <div class="period">2019 - Present</div>
+            <div class="company-logo">
+              <img src="imgs/google.png" alt="Google" />
+            </div>
+            <div class="job-title">Front-end Developer</div>
+          </li>
+          <li>
+            <div class="period">2017 - 2019</div>
+            <div class="company-logo">
+              <img src="imgs/apple.png" alt="Apple" />
+            </div>
+            <div class="job-title">Web Designer</div>
+          </li>
+          <li>
+            <div class="period">2015 - 2017</div>
+            <div class="company-logo">
+              <img src="imgs/amazon.png" alt="Amazon" />
+            </div>
+            <div class="job-title">Full-stack Developer</div>
+          </li>
+          <li>
+            <div class="period">2013 - 2015</div>
+            <div class="company-logo">
+              <img src="imgs/microsoft.png" alt="Microsoft" />
+            </div>
+            <div class="job-title">UI/UX Designer</div>
+          </li>
+          <li>
+            <div class="period">2011 - 2013</div>
+            <div class="company-logo">
+              <img src="imgs/meta.png" alt="Facebook" />
+            </div>
+            <div class="job-title">Back-end Developer</div>
+          </li>
+        </ul>
+      </div>
     </section>
     <section id="Portfolio">
       <a name="portfolio" style="position: relative; top: -75px"></a>
+      <h3>作品集</h3>
+      <div class="container">
+        <div class="item">
+          <img src="/imgs/japan.jpg" alt="" />
+          <div class="back">作品1</div>
+        </div>
+        <div class="item">
+          <img src="/imgs/japan2.jpg" alt="" />
+          <div class="back">作品2</div>
+        </div>
+        <div class="item">
+          <img src="/imgs/japan3.jpg" alt="" />
+          <div class="back">作品3</div>
+        </div>
+        <div class="item">
+          <img src="/imgs/photo1.jpg" alt="" />
+          <div class="back">作品4</div>
+        </div>
+        <div class="item">
+          <img src="/imgs/japan1.jpg" alt="" />
+          <div class="back">作品5</div>
+        </div>
+        <div class="item">
+          <img src="/imgs/photo2.jpg" alt="" />
+          <div class="back">作品6</div>
+        </div>
+        <div class="item">
+          <img src="/imgs/photo3.jpg" alt="" />
+          <div class="back">作品7</div>
+        </div>
+        <div class="item">
+          <img src="/imgs/food1.jpg" alt="" />
+          <div class="back">作品8</div>
+        </div>
+        <div class="item">
+          <img src="/imgs/food2.jpg" alt="" />
+          <div class="back">作品9</div>
+        </div>
+        <div class="item">
+          <img src="/imgs/flowers1.jpg" alt="" />
+          <div class="back">作品10</div>
+        </div>
+      </div>
     </section>
     <section id="Contact">
       <a name="contact" style="position: relative; top: -75px"></a>
