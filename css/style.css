@@ -13,11 +13,18 @@
   --forth-bg-color: #80ed99;
   --fifth-bg-color: #c7f9cc;
 }
+input:focus,
+textarea:focus {
+  outline: none;
+}
 html {
   scroll-behavior: smooth;
 }
-p,
-h3 {
+body {
+  background: darkblue;
+}
+body,
+a {
   font-family: var(--font-noto), var(--font-verdana);
 }
 h3 {
@@ -204,8 +211,6 @@ section {
 }
 .education {
   margin-bottom: 15px;
-}
-.education > h3 .skill-list {
 }
 .skill-list > li {
   height: 50px;
@@ -421,6 +426,68 @@ section {
 /*#Contact*/
 #Contact {
   background: var(--second-bg-color);
+}
+.contact-info,
+#Contact form {
+  width: 50%;
+  /* border: 1px solid;  */
+}
+.contact-info {
+  color: var(--font-color);
+  padding-top: 20%;
+}
+.contact-info > h3 {
+  text-align: left;
+  margin-bottom: 50px;
+}
+.contact-info > p,
+.contact-address,
+.contact-phone,
+.contact-email {
+  margin-bottom: 20px;
+}
+.contact-info i {
+  margin: 0 5px;
+}
+#Contact form,
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+#Contact form {
+  padding: 5%;
+  background: #fff;
+  border-radius: 15px;
+}
+.form-group {
+  padding: 10px;
+  gap: 20px;
+}
+.form-group input,
+.form-group textarea {
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  background: #f5f5f5;
+}
+.form-group .btn-submit {
+  border: none;
+  width: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  background: linear-gradient(to right, rgb(75, 74, 74), rgb(140, 135, 135));
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: var(--font-noto);
+}
+.form-group .btn-submit:hover {
+  background: linear-gradient(
+    to right top,
+    rgb(75, 74, 74),
+    rgb(140, 135, 135)
+  );
+  transform: scale(1.1);
 }
 /*#endregion*/
 

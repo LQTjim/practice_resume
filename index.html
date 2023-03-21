@@ -7,6 +7,7 @@
     <title>個人履歷</title>
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/style.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -14,7 +15,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="/js/index.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
   <body>
     <!-- 錨點 -->
@@ -36,7 +50,12 @@
       <i class="fa-brands fa-react" style="color: #2abccf"></i>
       <i class="fa-brands fa-vuejs" style="color: #23d1a6"></i>
     </section>
-    <section id="About">
+    <section
+      id="About"
+      data-aos="fade-up"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000"
+    >
       <!-- 錨點 -->
       <a name="about" style="position: relative; top: -75px"></a>
       <div class="container">
@@ -87,8 +106,14 @@
         </div>
       </div>
     </section>
-    <section id="Experience">
-      <a name="experience" style="position: relative; top: -75px"></a>
+    <a name="experience" style="position: relative; top: -60px"></a>
+    <section
+      id="Experience"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000"
+    >
+      <a name="experience" style="position: relative; top: -70px"></a>
       <h3>工作經歷</h3>
       <div class="container">
         <ul class="experience-list">
@@ -130,7 +155,12 @@
         </ul>
       </div>
     </section>
-    <section id="Portfolio">
+    <section
+      id="Portfolio"
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000"
+    >
       <a name="portfolio" style="position: relative; top: -75px"></a>
       <h3>作品集</h3>
       <div class="container">
@@ -178,9 +208,55 @@
     </section>
     <section id="Contact">
       <a name="contact" style="position: relative; top: -75px"></a>
+      <div class="container">
+        <div class="contact-info">
+          <h3>聯絡我</h3>
+          <p>如有任何問題或疑問，請隨時聯絡我們。</p>
+          <div class="contact-address">
+            <i class="fas fa-map-marker-alt"></i
+            ><span>台北市信義區信義路五段7號</span>
+          </div>
+          <div class="contact-phone">
+            <i class="fas fa-phone"></i><span>02-1234-5678</span>
+          </div>
+          <div class="contact-email">
+            <i class="fas fa-envelope"></i><span>example@mail.com</span>
+          </div>
+        </div>
+        <form action="" class="form">
+          <div class="form-group">
+            <label for="contact-name">姓名</label>
+            <input id="contact-name" type="text" placeholder="您的名字" />
+          </div>
+          <div class="form-group">
+            <label for="contact-email">信箱</label>
+            <input id="contact-email" type="text" placeholder="您的信箱" />
+          </div>
+          <div class="form-group">
+            <label for="contact-phone">電話</label>
+            <input id="contact-phone" type="text" placeholder="您的電話" />
+          </div>
+          <div class="form-group">
+            <label for="contact-message">訊息</label>
+            <textarea
+              id="contact-message"
+              name="message"
+              cols="30"
+              rows="10"
+              placeholder="您想說些什麼?"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn-submit">確定送出</button>
+          </div>
+        </form>
+      </div>
     </section>
     <footer>
       <p>2023 - 3030 &copy; LQT.com</p>
     </footer>
   </body>
+  <script>
+    AOS.init();
+  </script>
 </html>
