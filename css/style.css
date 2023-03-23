@@ -54,6 +54,9 @@ h3 {
   font-size: 2rem;
   cursor: pointer;
 }
+.header > .menu {
+  display: none;
+}
 .header > ul {
   display: flex;
 }

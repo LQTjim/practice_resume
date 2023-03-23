@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  position: relative;
+  overflow: visible;
+}
+.header > ul {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  overflow: hidden;
+}
+
+.header > ul > li > a {
+  background: #325e7c;
+  width: 100vw;
+}
+.header > .menu {
+  display: block;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.main-pic,
+.description {
+  width: 100%;
+}
+#Experience .container {
+  margin-top: 40%;
+}
+#Portfolio {
+  width: 100%;
+  height: auto;
+}
+#Portfolio .container {
+  width: 100%;
+  display: flex;
+  padding: 0;
+}
+
+#Portfolio .container .item {
+  height: 100px;
+}
+#Contact .container {
+  width: 100%;
+}
+#Contact {
+  height: auto;
+}
+#Contact .contact-info,
+#Contact .form {
+  width: 100%;
+}
